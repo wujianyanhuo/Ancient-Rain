@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>rain</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="animate.js"></script>
+</head>
+<body>
+	<div class="box" id="box">
+		<div class="slider" id="slider">
+			<div class="slide"><img src="images/02.jpg" alt=""></div>
+			<div class="slide"><img src="images/01.jpg" alt=""></div>
+			<div class="slide"><img src="images/03.jpg" alt=""></div>
+			<div class="slide"><img src="images/04.jpg" alt=""></div>
+			<div class="slide"><img src="images/05.jpg" alt=""></div>
+			<div class="slide"><img src="images/02.jpg" alt=""></div>
+			<div class="slide"><img src="images/01.jpg" alt=""></div>
+		</div>
+		<span id="left"><</span>
+		<span id="right">></span>
+		<ul class="nav" id="nav">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<ul class="fix">
+		<li id="daohang">
+		<a href="" id="men" onclick="daoOnclick()">门庭</a>
+		<a href="" id="fei" onclick="daoOnclick()">飞信</a>
+		<a href="" id="qing" onclick="daoOnclick()">清谈</a>
+		<a href="" id="fang" onclick="daoOnclick()">访友</a>
+		<a href="" id="bai" onclick="daoOnclick()">拜帖</a>
+		<div id="small">
+			<p id="deng">登录</p><br/>
+			<p>姓名</p>
+			<input type="text" name="userName"/><br/>
+			<p>密码</p>
+			<input type="text" name="password"/>
+		</div>
+		</li>
+		<li onclick="goTo('#div2')">山吸</li>
+		<li onclick="goTo('#div3')">春憩</li>
+		<li onclick="goTo('#div4')">沉雪</li>
+		<li onclick="goTo('#div5')">苦雨</li>
+	</ul>
+	<div class="div" id="div2">
+		<p id="cha1">一重山，两重山。<br/>山远天高烟水寒，相思枫叶丹。菊花开，菊花残。
+		<br/>塞雁高飞人未还，一帘风月闲。(李煜)<a href="">阅览全文</a><br/>
+		<br/>
+		山间的黄昏，来得那样迅速，那样了无声息，恍惚行走间，漫山雨雾紧随身后，一路追笼上来，不知不觉，松也肃穆，石也黯淡，影也婆娑。置身山顶开阔处，不辨星光，雨雾氤氲，挟裹了远山近岭，风轻轻拂过松林，如隐隐的涛声。脚下秋虫呢喃，不知名的鸟儿，偶尔在林间高声说着什么，潮湿的夜幕，就像墨汁一样浓。<a href="">阅览全文</a>
+		<br/>
+		<br/>
+		中午，太阳那金色的光芒照向大地，大山好像感到有点热似的，让树木把它遮盖住，让它感到凉爽。太阳其实也是一番好意，想让大山变得更加灿烂、美丽、辉煌。瞧，这不，正如它所愿，大山变得更加美丽了。它变得更加绿，更加光彩夺目了。<a href="">阅览全文</a><br/><a href="">阅读更多</a>
+		</p>
+
+		<p id="cha1dao">
+			山吸
+		</p>
+		<a href="https://mengxiaheqing.lofter.com/" class="hua" id="hua1">
+			画师：@lofter.鹤相空
+		</a>
+	</div>
+	<div class="div" id="div3">
+	<p id="cha1">草树知春不久归，百般红紫斗芳菲。
+	<br/>杨花榆荚无才思，惟解漫天作雪飞。<br/>(韩愈)<a href="">阅览全文</a><br/>
+		<br/>
+		自你离开以后，从此就丢掉了笑颜。等待，在这春暖花开的季节，听候鸟南归，看春花烂漫。路漫长，却依然望不到心中那抹湛蓝。一望无垠的天际，呈现灰蒙蒙一片，荒凉了心里所有的期许和祈盼<a href="">阅览全文</a>
+		<br/>
+		<br/>
+		天宇之间，每一颗星都有它的使命，也许我们并不知道，我们肩负怎样的使命来到世上，只有当我们像流星一样陨落时，我们才知道自己做过什么。<a href="">阅览全文</a>
+		<br/>
+		<br/>
+		生命中，不断的有人离开或进入，于是，看见的看不见了，记住的遗忘了；生命中不断的有得到和失落，于是，看不见的看见了，遗忘的记住了。<a href="">阅览全文</a><br/><a href="">阅读更多</a>
+		</p>
+
+		<p id="cha1dao">
+			春憩
+		</p>
+	<a href="https://mengxiaheqing.lofter.com/" class="hua">
+			画师：@lofter.鹤相空
+		</a>
+	</div>
+	<div class="div" id="div4">
+	<p id="cha1">晨起开门雪满山，<br/>雪晴云淡日光寒。
+		<br/>檐流未滴梅花冻，一种清孤不等闲。(郑板桥)<a href="">阅览全文</a><br/>
+		<br/>
+		柳絮一般的雪，芦花一般的雪，轻烟一般的雪，流转，追逐，来时纤尘不染，落时点尘不惊。一朵朵六角小花，玲珑剔透，无一重样。粉雕玉琢，可是，哪一位艺术家能设计出如此精巧的纹路？哪一位雕刻着能雕出如此细致的工艺品？与其说是大自然的杰作，我宁愿相信是天宫里某位仙子的眼泪！<a href="">阅览全文</a>
+		<br/>
+		<br/>
+		一树寒梅白玉条，<br/>迥临村路傍溪桥。 <br/>
+		不知近水花先发，<br/>疑是经冬雪未销。<br/>(张谓)<a href="">阅览全文</a><br/><a href="">阅读更多</a>
+		</p>
+
+		<p id="cha1dao">
+			沉雪
+		</p>
+	<a href="https://mengxiaheqing.lofter.com/" class="hua">
+			画师：@lofter.鹤相空
+		</a>
+	</div>
+	<div class="div" id="div5">
+	<p id="cha1">云销雨霁，彩彻区明。<br/>落霞与孤鹜齐飞，秋水共长天一色。<br/>渔舟唱晚，响穷彭蠡之滨，雁阵惊寒，声断衡阳之浦。<br/>(王勃)<a href="">阅览全文</a><br/>
+		<br/>
+		秋风清，秋月明，<br/>落叶聚还散，寒鸦栖复惊。<br/>相思相见知何日？此时此夜难为情！<br/>(李白)<a href="">阅览全文</a>
+		<br/>
+		<br/>
+		见到落叶并不稀奇，但是这是在春天，四月的春天！春天见得最多的应是傲然怒放的鲜花和春风得意的杨柳，而不是这像蝴蝶一般在空中翩翩起舞，萦绕的落叶。我看着地上的落叶，有三种不同的颜色：翡翠般绿的，金子般黄的，火一般红的，真可以说是色彩繁多了。<br/><a href="">阅览全文</a><br/><a href="">阅读更多</a>
+		</p>
+
+		<p id="cha1dao">
+			苦雨
+		</p>
+	<a href="https://mengxiaheqing.lofter.com/" class="hua">
+			画师：@lofter.鹤相空
+		</a>
+	</div>
+	<div id="feet">
+			<p id="feetp">清荷人晚宁，微雨枯徘徊
+			<br/>明备1566号、2020-2077 版权所有</p>
+	</div>
+	<script>
+//轮播图---------------------------------
+		var box = document.getElementById('box');
+		var oNavlist = document.getElementById('nav').children;//红点
+		var slider = document.getElementById('slider');//图片
+		var left = document.getElementById('left');//左右箭头
+		var right = document.getElementById('right');
+		var index = 1;
+		var timer;
+		var isMoving = false;
+		box.onmouseover = function(){
+			animate(left,{opacity:50})
+			animate(right,{opacity:50})
+			clearInterval(timer)
+		}
+		box.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 3000);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].index = i;
+			oNavlist[i].onclick = function(){
+				index = this.index+1;
+				navmove();
+				animate(slider,{left:-1200*index});
+			}
+		}
+		function next(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index++;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==6){
+					slider.style.left = '-1200px';
+					index = 1;
+				}
+				isMoving = false;
+			});
+		}
+		function prev(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index--;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==0){
+					slider.style.left = '-6000px';
+					index = 5;
+				}
+				isMoving = false;
+			});
+		}
+		function navmove(){
+			for( var i=0; i<oNavlist.length; i++ ){
+				oNavlist[i].className = "";
+			}
+			if(index >5 ){
+				oNavlist[0].className = "active";
+			}else if(index<=0){
+				oNavlist[4].className = "active";
+			}else {
+				oNavlist[index-1].className = "active";
+			}
+		}
+		timer = setInterval(next, 3000);
+		// 轮播图
+		// 导航
+		function goTo(s){
+			location.hash = s; 
+		}
+		//其余
+		function daoOnclick(){
+			alert("请先登录！");
+		}
+	var men = document.getElementById("men");
+	var bai = document.getElementById("bai");
+	var qing = document.getElementById("qing");
+	var fang = document.getElementById("fang");
+	var fei = document.getElementById("fei");
+	var small = document.getElementById("small");
+	men.onmouseover=function(){
+		men.innerHTML="首页";
+	}
+	men.onmouseout=function(){
+		men.innerHTML="门庭";
+	}
+
+	bai.onmouseover=function(){
+		bai.innerHTML="登录";
+		small.style.display="block";
+	}
+	bai.onmouseout=function(){
+		bai.innerHTML="拜帖";
+	}
+	small.onmouseout = function(){
+		small.style.display="none";
+	}
+
+	qing.onmouseover=function(){
+		qing.innerHTML="互动";
+	}
+	qing.onmouseout=function(){
+		qing.innerHTML="清谈";
+	}
+	fang.onmouseover=function(){
+		fang.innerHTML="好友";
+	}
+	fang.onmouseout=function(){
+		fang.innerHTML="访友";
+	}
+	fei.onmouseover=function(){
+		fei.innerHTML="信息";
+	}
+	fei.onmouseout=function(){
+		fei.innerHTML="飞信";
+	}
+	</script>
+</body>
+</html>
